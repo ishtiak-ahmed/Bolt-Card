@@ -8,6 +8,7 @@ const FundRequest = () => {
     const [query, setQuery] = useState('')
     const [queryType, setQueryType] = useState('name')
     const handleSearch = () => {
+        if(!query.length) return;
         const result = allRequest.filter(request => request[queryType].includes(query))
         setSearchResult({status: true, result: result})
     }
