@@ -1,0 +1,84 @@
+@import './color';
+
+.sidebar {
+    padding: 2em 1em;
+    border-right: 1px solid $secondary-color;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-gap: 2em;
+    .dropdown__menu {
+        color: $secondary-dark;
+        padding: 10px 4em;
+        margin-bottom: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: $background-light;
+            color: $primary-color;
+        }
+    }
+    .dropdown__active {
+        background-color: $background-light;
+        color: $primary-color;
+    }
+}
+
+.brand {
+  color: $highlights-color;
+}
+
+.menu_item {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 1em;
+    cursor: pointer;
+    color: $secondary-dark;
+    padding-left: 1em;
+    &:hover {
+        color: $highlights-color;
+    }
+}
+
+.active {
+        color: $highlights-color;
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+// Responsive Style for Tablet
+@media (max-width: 920px) {
+    .sidebar {
+        height: 3em;
+        display: grid;
+        grid-template-columns: auto 30px;
+        grid-gap: 2em;
+        justify-content: space-between;
+    }
+    .user {
+        display: none;
+    }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+        position: absolute;
+        inset: 5em 0 0 0;
+        background-color: #fff;
+        padding: 1em 3em;
+        min-height: 90vh;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+@media (max-width: 750px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}

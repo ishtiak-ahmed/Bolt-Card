@@ -1,5 +1,4 @@
 import React from 'react';
-// import CurrencyFormat from 'react-currency-format';
 
 const TableRow = ({data, index}) => {
     const colors = ['pink', 'green', 'orange', 'purple', 'blue']
@@ -12,7 +11,10 @@ const TableRow = ({data, index}) => {
                 <div>
                     <span className={"name_circle " + className}>{nameShort}</span>
                 </div>
-                {data.name} <br /> #{data.id}
+                <div className="user_info">
+                    <span>{data.name}</span>
+                    <span className='userid'>#{data.id}</span>
+                </div>
             </td>
             <td>{data.amount}</td>
             <td>{data.deadline}</td>
