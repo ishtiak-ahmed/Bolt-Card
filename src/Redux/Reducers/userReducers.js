@@ -1,7 +1,7 @@
 const user = {
     name: 'Mr. Baakir Qara',
     role: 'Administrator',
-    image: 'image..'
+    image: '/avater.png'
 }
 
 export const userReducers = (state = user, action) => {

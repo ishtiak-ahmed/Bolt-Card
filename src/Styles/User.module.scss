@@ -8,6 +8,7 @@
     &__avater {
         height: 55px;
         width: 55px;
+        overflow: hidden;
         border-radius: 50%;
         background-color: $secondary-color;
         border: 5px solid #fff;
