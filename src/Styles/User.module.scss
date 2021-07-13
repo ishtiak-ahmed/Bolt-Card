@@ -1,0 +1,25 @@
+@import './color';
+
+.user {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1em;
+
+    &__avater {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        background-color: $secondary-color;
+        border: 5px solid #fff;
+    }
+    &__details {
+        &__role {
+            color: $secondary-dark;
+            margin: 0;
+        }
+        &__name {
+            margin-top: 8px;
+            color: $primary-color;
+        }
+    }
+}

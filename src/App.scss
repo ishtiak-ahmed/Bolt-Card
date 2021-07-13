@@ -1,0 +1,17 @@
+@import './Styles/Dashboard.module.scss';
+@import './Styles/User.module.scss';
+@import './Styles/color';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #FBFBFC;
+}
+
+span.icon {
+  font-family: 'Material Icons';
+  font-size: 22px;
+}
