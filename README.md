@@ -3,6 +3,9 @@
 
 ## [Live Site](https://bolt-card.netlify.app/)
 
+## Project Description
+```This is an Admin dashboard app for a Imaginary  Bank (Credit Card) service. Here I use Redux(Thunk), React. I used The SASS module system to make it fully responsive with raw CSS rules.  I also used the  Material Icon library to use icons. ```
+
 ## Feature
     * Search Functionality with Redux store
 
